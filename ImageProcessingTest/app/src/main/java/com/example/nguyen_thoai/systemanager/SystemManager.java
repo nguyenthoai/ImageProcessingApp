@@ -23,7 +23,7 @@ public class SystemManager {
         if (files == null) {
             return;
         }
-//        Log.e("getPath----------", home.getPath());
+        Log.e("getPath----------", home.getPath());
         for (File file : files) {
             if (!file.isDirectory() && (file.getName().toLowerCase().endsWith(".jpg") ||
                     file.getName().toLowerCase().endsWith(".png"))) {
@@ -36,6 +36,7 @@ public class SystemManager {
                 getListImage(file);
             }
         }
+        Log.e("systemanager", "image size" + listImageProcess.size());
     }
 
 
